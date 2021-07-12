@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Imagens/notebook.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Lógica para Computação</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbarr">
+            <h1 type="text" id="titlee">Lógica para Computação</h1>
+            <a id="img-Logo" href="https://www.uniaraxa.edu.br/" target="_blank">
+                <img id="imguni" src="Imagens/Logo-c-nota-5.png" class="img-fluidd" alt="Responsive image">
+                <br>
+            </a>
+        </nav>
+    </header>
+    
+    <button id="btnGroupDrop1" type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="offcanvas"
+        href="#offcanvasExample" aria-expanded="false">
+        Atalhos ☵
+    </button>
+    <div class="offcanvas offcanvas-start w-25 p-3 mt-10" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="d-grid gap-2">
+            <a href="Porta-Logica-NOT.html" class="btn btn-dark">Porta NOT</a>
+            <a href="Porta-Logica-OU.html" class="btn btn-dark">Porta OU</a>
+            <a href="Porta-Logica-E.html" class="btn btn-dark">Porta AND</a>
+            <a href="Porta-Logica-IMPLICA.html" class="btn btn-dark">Porta IMPLICA</a>
+            <a href="Porta-Logica-BI-IMPLICA.html" class="btn btn-dark">Porta BI-IMPLICA</a>
+            <a href="Sobre.html" class="btn btn-info">Conheça o projeto</a>
+        </div>
+
+    </div>
+    <br />
+
+    <div class="container">
+        <h1>Introdução a Lógica</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <!--Explicação Sobre LOGICA A BAIXO-->
+                <p>A lógica de programação é a capacidade que todo programador precisa ter para resolver os problemas
+                    que aparecem no dia-a-dia. A capacidade de dividir o problema em partes menores é uma etapa
+                    essencial da lógica de programação e precisa
+                    ser levada em consideração quando nos deparamos com qualquer exercício/desafio. É nesse ponto que
+                    entra o conceito de algoritmo, descrito, geralmente, como uma sequência lógica de ações capaz de
+                    resolver um problema. Podemos imaginar
+                    o computador como uma super calculadora capaz de fazer cálculos muito mais rápido que nós, mas para
+                    isso devemos dizer para o computador o que deve ser calculado e como deve ser calculado. A função
+                    das linguagens de programação é exatamente
+                    essa, ou seja, servir de um meio de comunicação entre computadores e humanos, assim como os humanos
+                    fazem com os humanos: usam da linguagem para poder conversar. Quando programamos em uma linguagem de
+                    programação primeiramente criamos
+                    um arquivo de texto comum contendo a lógica do que deve ser feito, ou seja, é onde falamos ao
+                    computador, o que queremos. Este arquivo de texto é chamado de programa, cada palavra de ordem
+                    dentro do programa é chamada de instrução.
+                    Após criarmos o programa, este deve ser traduzido para linguagem entendida pelo computador a partir
+                    da linguagem que estamos utilizando. Um segundo arquivo que chamamos de executável ou programa, será
+                    gerado e interpretado diretamente
+                    pelo computador.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <img id="jurubeba" src="Imagens/arduino-2168193_1280.png" alt="Responsive image">
+                <!--IMAGEM CORRESPONDENTE DA LOGICA-->
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-sm-6">
+                <!--Explicação Sobre LOGICA A BAIXO-->
+                <p>
+                    A história da lógica documenta o desenvolvimento da <a
+                        href="https://pt.wikipedia.org/wiki/L%C3%B3gica">lógica</a> em várias <a
+                        href="https://pt.wikipedia.org/wiki/Cultura">culturas</a> e tradições. Apesar de muitas culturas
+                    terem
+                    usado complicados sistemas de raciocínio, somente na China, Índia e Grécia os métodos de raciocínio
+                    tiveram um desenvolvimento sustentável. Embora as datas sejam incertas, especialmente no caso da
+                    Índia, é possível que a lógica tenha
+                    emergido nos três países por volta do século IV a.C. A lógica moderna descende da tradição grega,
+                    mas também há influências de <a
+                        href="https://pt.wikipedia.org/wiki/Filosofia_isl%C3%A2mica">filósofos islâmicos</a> e de
+                    lógicos europeus
+                    da era medieval que tiveram contato com a <a
+                        href="https://pt.wikipedia.org/wiki/L%C3%B3gica_aristot%C3%A9lica">logica aristotélica</a> .
+                    <a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_l%C3%B3gica">[1]</a> A lógica, enquanto
+                    propriedade linguística, não se preocupa com a veracidade dos enunciados, mas com a validade formal
+                    lógica, ou seja, com a possibilidade
+                    de sentido da frase dada por sua estrutura. Se a estrutura de uma frase é correta, isto é, se ela
+                    segue um padrão formal correto, podemos dizer que a frase é logicamente válida. Na <a
+                        href="https://mundoeducacao.uol.com.br/matematica">matemática </a>,
+                    é a lógica que garante a estrutura formal racional das <a
+                        href="https://mundoeducacao.uol.com.br/matematica/equacao-1.htm">equação </a> e demais elementos
+                    matemáticos que, de algum modo, relacionam-se. <a
+                        href="https://mundoeducacao.uol.com.br/filosofia/logica.htm">[2]</a>
+                </p>
+            </div>
+
+            <div class="col-sm-6">
+                <img id="jurubeba" src="Imagens/Aristoteles.jpg" alt="Responsive image">
+                <!--IMAGEM CORRESPONDENTE DA LOGICA-->
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-sm-6">
+                <!--Explicação Sobre LOGICA A BAIXO-->
+                <p>Na lógica nós temos as portas logicas e as tabelas verdades, sendo os conectivos: NOT, OUR, AND,
+                    IMPLICA e BI-IMPLICA. Abaixo você tem um exemplo de cada porta logica e sua tabela verdade.</p>
+            </div>
+
+
+        </div>
+
+        <br>
+
+        <div class="container" id="padaria">
+            <div class="row row-cols-1 row-cols-md-6">
+                <div class="col mb-4">
+                    <div class="card" style="width: 12rem;">
+                        <img src="Imagens/NOT.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><small>A Porta NOT ou inversora é uma porta lógica digital que
+                                    implementa a negação lógica.</small></p><br><br>
+                            <a href="Porta-Logica-NOT.html" class="btn btn-dark">Conheça a porta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card" style="width: 12rem;">
+                        <img src="Imagens/OUR.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><small>A porta OUR utiliza-se do operador de soma lógica. A saída é
+                                    igual a 1 se pelo menos uma das entradas for 1.</small></p><br>
+                            <a href="Porta-Logica-OU.html" class="btn btn-dark">Conheça a porta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card" style="width: 12rem;">
+                        <img src="Imagens/AND.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><small>A porta AND é uma operação lógica que resulta em um valor
+                                    verdadeiro somente se todos os operados tem um valor verdadeiro</small></p>
+                            <a href="Porta-Logica-E.html" class="btn btn-dark">Conheça a porta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card" style="width: 12rem;">
+                        <img src="Imagens/IMPLICA.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><small>A porta IMPLICA é uma operação lógica que resulta em um valor
+                                    lógico verdadeiro somente se a AÇÃO não resultar em verdadeiro.</small></p>
+                            <a href="Porta-Logica-IMPLICA.html" class="btn btn-dark">Conheça a porta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card" style="width: 12rem;">
+                        <img src="Imagens/BIIMPLICA.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><small>A porta BI-IMPLICA é uma operação lógica que resulta em um valor
+                                    verdadeiro somente se os operadores forem iguais.</small></p>
+                            <a href="Porta-Logica-BI-IMPLICA.html" class="btn btn-dark">Conheça a porta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
