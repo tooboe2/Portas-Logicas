@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="Imagens/notebook.png" />
+    <title>Porta Lógica OU</title>
+
+    <style>
+        table {
+            text-align: center;
+        }
+    </style>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbarr">
+            <h1 type="text" id="titlee">Conectivo Lógico OU "(v)"</h1>
+            <a id="home-Logo" href="index.html">
+                <button id="pinga" class="btnn fourth">HOME</button>
+                <br>
+            </a>
+        </nav>
+    </header>
+
+    <br>
+    <div class="dropdown">
+        <button class="dropbtn">Atalhos ☵</button>
+        <div class="dropdown-content">
+            <a href="Porta-Logica-NOT.html" class="btn">Porta NOT</a>
+            <a href="Porta-Logica-E.html" class="btn">Porta AND</a>
+            <a href="Porta-Logica-IMPLICA.html" class="btn">Porta IMPLICA</a>
+            <a href="Porta-Logica-BI-IMPLICA.html" class="btn">Porta BI-IMPLICA</a>
+        </div>
+    </div>
+
+
+    <div class="container"><br>
+
+        <h2>Simbologia: “ v “</h2>
+        <br>
+        <h3>Definição:</h3>
+
+        <p>De acordo com RONALD J. TOCCI em “SISTEMAS DIGITAIS princípios e aplicações” 11ª Edição, Em circuitos
+            digitais, uma porta OR é um circuito que tem duas ou mais entradas e cuja saída é igual à combinação das
+            entradas por meio da operação OR. (...) As entradas P e Q são níveis lógicos de tensão, e a saída S é um
+            nível lógico de tensão cujo valor é o resultado da operação OR entre P e Q; ou seja, S = A + B. Em outras
+            palavras, a porta OR opera de modo que sua saída será ALTA (nível lógico 1) se a entrada A ou B ou ambas
+            forem nível lógico 1. A saída de uma porta OR será nível BAIXO (nível lógico 0) apenas se todas as entradas
+            forem nível 0.</p>
+
+        <h3>Exemplos em linguagem natural:</h3>
+
+        <p>P = Ficar em casa </p>
+        <p>Q = Ir ao cinema</p>
+        <p>P v Q = H : Ficamos em casa (OU) vamos ao cinema.</p>
+        <br>
+        <p>P = Preferir carne</p>
+        <p>Q = Preferir sala</p>
+        <p>P v Q = H : Você prefere carne (OU) prefere salada.</p>
+        <br>
+        <p>P = Comprar balas</p>
+        <p>Q = Comprar chocolates</p>
+        <p>P v Q = S : Com este dinheiro você pode comprar balas (OU) chocolates.</p>
+
+        <h3>Fórmulas que equivalem semanticamente:</h3><br>
+        <p>¬(¬P e ¬Q)</p>
+        <br>
+        <h3>Tabela Verdade:</h3>
+
+        <div class="container">
+            <br>
+            <div>
+                <input class="classcheckbox" id="checkboxlinhaP" type="checkbox" onclick="Checkbox1()">Negar Proposição
+                P
+                </input><br>
+                <input class="classcheckbox" id="checkboxlinhaQ" type="checkbox" onclick="Checkbox2()">Negar Proposição
+                Q
+                </input><br><br>
+            </div>
+
+            <div>
+                <label id="negacaoP"></label>
+                <label id="formulaP">P</label>
+                <label id="formula->">V</label>
+                <label id="negacaoQ"></label>
+                <label id="formulaQ">Q</label><br><br>
+            </div>
+
+
+            <table id="tabelaverdade" class="table table-bordered">
+                <thead id="cabeçalhotabela" class="thead-dark">
+                    <tr>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>H</th>
+                    </tr>
+                </thead>
+                <tbody id="corpotabelalinha1">
+                    <td id="linha1P">false</td>
+                    <td id="linha1Q">false</td>
+                    <td id="resultadolinha1">false</td>
+                </tbody>
+                <tbody id="corpotabelalinha2">
+                    <td id="linha2P">false</td>
+                    <td id="linha2Q">true</td>
+                    <td id="resultadolinha2">true</td>
+                </tbody>
+                <tbody id="corpotabelalinha3">
+                    <td id="linha3P">true</td>
+                    <td id="linha3Q">false</td>
+                    <td id="resultadolinha3">true</td>
+                </tbody>
+                <tbody id="corpotabelalinha4">
+                    <td id="linha4P">true</td>
+                    <td id="linha4Q">true</td>
+                    <td id="resultadolinha4">true</td>
+                </tbody>
+            </table>
+        </div>
+
+        Referências:<br><a href="Sistemas Digitais - Princípios e Aplicações - Ronald J. Tocci - 11a Edição.pdf"
+            target="_blank">
+            <button type="button" class="btn btn-outline-primary">
+                SISTEMAS DIGITAIS Princípios e aplicações” - RONALD J. TOCCI - 11a Edição - 2011 - Capítulo 3.3 -
+                Páginas
+                52, 53 e 54.</button></a>
+        <br />
+    </div><br>
+    <script type="text/javascript" src="Porta-OU.js"></script>
+
+</body>
+
+</html>

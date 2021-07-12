@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.img-fluidd {
+    width: 175px;
+    margin: 20px;
+    
+}
+
+.navbarr {
+    background-image: linear-gradient(to right, #00053B, #00081F, #000000);
+    width: auto;
+    height: 100px;
+    
+}
+
+#pinga {
+    margin-top: 20px;
+
+}
+
+#titlee {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    height: 1px;
+    position: relative;
+    margin: 0;
+    top: 35px;
+    font-size: 34px;
+    text-shadow: 0.1em 0.1em 0.02em black;
+
+}
+
+.container {
+    text-align: justify;
+
+}
+
+#jurubeba {
+    border-radius: 8px;
+     width: 340px;
+
+}
+
+.btn {
+    margin: 5px;
+}
+
+#img-Logo{
+    position:relative;
+    display:inline-block;
+    width: 150px;
+    margin: 5px;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  #home-Logo{
+    position:relative;
+    display:inline-block;
+    width: 15px;
+    margin: 5px;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  #img-Logo:after{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  #img-Logo:hover{
+    transform:scale(1.25,1.25);
+  }
+  
+  #img-Logo:hover::after{
+    opacity:1;
+  }
+
+  .btnn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 5px;
+    padding: 1.2em 1.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  .btnn:hover, .btnn:focus {
+    color: #fff;
+    outline: 0;
+    
+  }
+
+  .fourth {
+    border-color: #010407;
+    color: rgb(255, 255, 255);
+    background-image: -webkit-linear-gradient(45deg, #4169E1 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #1b4f83 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+  .fourth:hover {
+    background-position: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.767);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+  }
+
+  body {
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: blue orange;   /* scroll thumb and track */
+  }
+
+  #btnGroupDrop1 {
+    border-color: #000000;
+    color: #000000;
+  }
+
+  .dropbtn {
+    background-color: #ffffff;
+    color: rgb(10, 10, 10);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #0a0808; 
+    border-radius: 10px;
+    cursor: pointer;
+    height: 40px;
+    width: 112px;
+    display:inline-block;
+    position: relative;
+    margin: 5px;
+    margin-top: -50px;
+    text-align: justify;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #6b6a6a7e}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #0dcaf0;
+  }
+ 

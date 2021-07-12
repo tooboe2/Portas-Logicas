@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="Imagens/notebook.png" />
+    <title>Porta Lógica IMPLICA</title>
+
+    <style>
+        table {
+            text-align: center;
+        }
+    </style>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbarr">
+            <h1 type="text" id="titlee">Conectivo Lógico IMPLICA "(->)"</h1>
+            <a id="home-Logo" href="index.html">
+                <button id="pinga" class="btnn fourth">HOME</button>
+                <br>
+            </a>
+        </nav>
+    </header>
+
+    <br>
+    <div class="dropdown">
+        <button class="dropbtn">Atalhos ☵</button>
+        <div class="dropdown-content">
+            <a href="Porta-Logica-NOT.html" class="btn">Porta NOT</a>
+            <a href="Porta-Logica-OU.html" class="btn">Porta OU</a>
+            <a href="Porta-Logica-E.html" class="btn">Porta AND</a>
+            <a href="Porta-Logica-BI-IMPLICA.html" class="btn">Porta BI-IMPLICA</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <br>
+        <h2>Simbologia: “ -> “</h2> <br>
+        <h3>Definição:</h3>
+
+        <p>Na lógica e na matemática, a implicação, ou condicional é a indicação do tipo "SE...ENTÃO", indicando que uma
+            condição deve ser satisfeita necessariamente para que a outra seja verdadeira. Por exemplo, a expressão: "Se
+            João esquia, Maria nada" é uma implicação.
+            Na lógica booleana, as implicações retornam FALSO se, e somente se, o antecedente é VERDADEIRO e o
+            consequente é FALSO.<a
+                href="https://pt.wikipedia.org/wiki/Implicação#:~:text=Na%20lógica%20e%20na%20matemática,Maria%20nada%20é%20uma%20implicação."
+                target="_blank">{1}</a>
+        </p>
+
+        <h3>Exemplos em linguagem natural:</h3>
+
+        <p>P = Maria for ao cinema;</p>
+        <p>Q = Ficará feliz;</p>
+        <p>P -> Q = H : Se Maria for ao cinema, então ela ficará feliz.</p>
+        <br>
+        <p>P = Chove;</p>
+        <p>Q = Rua molha;</p>
+        <p>P -> Q = H : Se chove, então a rua fica molhada.</p>
+        <br>
+        <p>P = Chove;</p>
+        <p>Q = Faz frio;</p>
+        <p>P -> Q = S : Se chove, então faz frio.</p>
+
+        <h3>Equivalência Semântica</h3>
+        <p>Podemos dizer que duas fórmulas são equivalentes semanticamente, se o resultado de ambas as tabelas-verdade
+            forem
+            iguais. A seguir temos alguns exemplos de algumas fórmulas que equivalem semanticamente à conjunção entre
+            "P" e
+            "Q"
+            (P -> Q).</p>
+        <h3>Fórmulas que equivalem semanticamente:</h3><br>
+        <p> (¬P) v Q; (¬Q) -> (¬P)</p><br>
+        <h3>Tabela Verdade:</h3>
+        <br>
+        <div>
+            <input class="classcheckbox" id="checkboxlinhaP" type="checkbox" onclick="Checkbox1()">Negar Proposição P
+            </input><br>
+            <input class="classcheckbox" id="checkboxlinhaQ" type="checkbox" onclick="Checkbox2()">Negar Proposição Q
+            </input><br><br>
+        </div>
+
+        <div>
+            <label id="negacaoP"></label>
+            <label id="formulaP">P</label>
+            <label id="formula->">→</label>
+            <label id="negacaoQ"></label>
+            <label id="formulaQ">Q</label><br><br>
+        </div>
+
+
+        <table id="tabelaverdade" class="table table-bordered">
+            <thead id="cabeçalhotabela" class="thead-dark">
+                <tr>
+                    <th>P</th>
+                    <th>Q</th>
+                    <th>H</th>
+                </tr>
+            </thead>
+            <tbody id="corpotabelalinha1">
+                <td id="linha1P">false</td>
+                <td id="linha1Q">false</td>
+                <td id="resultadolinha1">true</td>
+            </tbody>
+            <tbody id="corpotabelalinha2">
+                <td id="linha2P">false</td>
+                <td id="linha2Q">true</td>
+                <td id="resultadolinha2">true</td>
+            </tbody>
+            <tbody id="corpotabelalinha3">
+                <td id="linha3P">true</td>
+                <td id="linha3Q">false</td>
+                <td id="resultadolinha3">false</td>
+            </tbody>
+            <tbody id="corpotabelalinha4">
+                <td id="linha4P">true</td>
+                <td id="linha4Q">true</td>
+                <td id="resultadolinha4">true</td>
+            </tbody>
+        </table>
+        Referências:<br>
+        <a href="https://pt.wikipedia.org/wiki/Implicação#:~:text=Na%20lógica%20e%20na%20matemática,Maria%20nada%20é%20uma%20implicação."
+            target="_blank"><button type="button"
+                class="btn btn-outline-primary">https://pt.wikipedia.org/wiki/Implicação#:~:text=Na%20lógica%20e%20na%20matemática,Maria%20nada"%20é%20uma%20implicação.</button></a>
+        <br />
+    </div><br>
+    </div>
+
+
+    <script type="text/javascript" src="Porta-Implica.js"></script>
+
+</body>
+
+</html>

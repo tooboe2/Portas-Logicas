@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="Imagens/notebook.png" />
+    <title>Conectivo Lógico Bi-Implica</title>
+    <style>
+        table {
+            text-align: center;
+        }
+    </style>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbarr">
+            <h1 type="text" id="titlee">Conectivo Lógico BI-IMPLICA "(↔)"</h1>
+            <a id="home-Logo" href="index.html">
+                <button id="pinga" class="btnn fourth">HOME</button>
+                <br>
+            </a>
+        </nav>
+    </header>
+    <br>
+<div class="dropdown">
+  <button class="dropbtn">Atalhos ☵</button>
+  <div class="dropdown-content">
+    <a href="Porta-Logica-NOT.html" class="btn">Porta NOT</a>
+    <a href="Porta-Logica-OU.html" class="btn">Porta OU</a>
+    <a href="Porta-Logica-E.html" class="btn">Porta AND</a>
+    <a href="Porta-Logica-IMPLICA.html" class="btn">Porta IMPLICA</a>
+  </div>
+</div>
+
+    <div class="container">
+        <br>
+
+        <h3>Definição</h3>
+
+        Uma Bi-implicação é representada pelo conectivo lógico "se, somente se"(↔), assumindo o valor verdadeiro
+        apenas se ambas as proposições da fórmula forem satisfeitas. Caso as proposições sejem distintas o conectivo
+        retornara falso, podendo
+        ser verdadeiro se, somente se os conectivos forem iguais, verdadeiro com verdadeiro ou falso com falso
+        <a href="https://pt.wikipedia.org/wiki/Lógica_proposicional" target="_blank">{ 1 }</a> . Para
+        entender melhor, veja os exemplos a seguir:
+        <br><br>
+        <h3>Exemplos em linguagem natural:</h3>
+
+        <br> Fórmula (H) = (P ↔ Q) <br><br> P = A taça ira quebrar. <br> Q = Cair da mesa. <br> H = A taça ira
+        quebrar <b>se, e somente se</b>, cair da mesa.
+
+        <br><br> P = O número natural é divisível por cinco. <br> Q = O último algarismo do número natural é zero ou
+        cinco.<br> H = O número natural é divisível por 5 <b>se, e somente se,</b> o seu último algarismo é zero ou
+        cinco.<br>
+
+        <br> P = Renato é um genio.<br> Q = Renato aprovar os alunos.<br> H = Renato é um genio <b>se, e somente
+            se</b>, Renato aprovar os alunos.<br>
+
+        <br><br>
+
+
+        <h3>Tabela Verdade </h3>
+
+        <br>
+        <div>
+            <input class="classcheckbox" id="checkboxlinhaP" type="checkbox" onclick="Checkbox1()">Negar Proposição P
+            </input><br>
+            <input class="classcheckbox" id="checkboxlinhaQ" type="checkbox" onclick="Checkbox2()">Negar Proposição Q
+            </input><br><br>
+        </div>
+
+        <div>
+            <label id="negacaoP"></label>
+            <label id="formulaP">P</label>
+            <label id="formula->">
+                <->
+            </label>
+            <label id="negacaoQ"></label>
+            <label id="formulaQ">Q</label><br><br>
+        </div>
+
+
+        <table id="tabelaverdade" class="table table-bordered">
+            <thead id="cabeçalhotabela" class="thead-dark">
+                <tr>
+                    <th>P</th>
+                    <th>Q</th>
+                    <th>H</th>
+                </tr>
+            </thead>
+            <tbody id="corpotabelalinha1">
+                <td id="linha1P">false</td>
+                <td id="linha1Q">false</td>
+                <td id="resultadolinha1">true</td>
+            </tbody>
+            <tbody id="corpotabelalinha2">
+                <td id="linha2P">false</td>
+                <td id="linha2Q">true</td>
+                <td id="resultadolinha2">false</td>
+            </tbody>
+            <tbody id="corpotabelalinha3">
+                <td id="linha3P">true</td>
+                <td id="linha3Q">false</td>
+                <td id="resultadolinha3">false</td>
+            </tbody>
+            <tbody id="corpotabelalinha4">
+                <td id="linha4P">true</td>
+                <td id="linha4Q">true</td>
+                <td id="resultadolinha4">true</td>
+            </tbody>
+        </table>
+
+        <h3>Equivalência Semântica</h3>
+
+        <br> Podemos dizer que duas fórmulas são equivalentes semanticamente, se o resultado de ambas as tabelas-verdade
+        forem iguais. A seguir temos alguns exemplos de algumas fórmulas que equivalem semanticamente à conjunção entre
+        "P" e "Q" (P ↔ Q).
+        <br><br>
+
+        <h3>Exemplos</h3>
+
+        <br>
+        <b>(P -> Q) ^ (Q -> P)</b>
+        <br><br>
+
+        <table class="table table-bordered" border="1px">
+            <thead class="thead-dark">
+                <tr>
+                    <th> (P -> Q) </th>
+                    <th> (Q -> P) </th>
+                    <th> H </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> true </td>
+                    <td> true </td>
+                    <td> true </td>
+                </tr>
+                <tr>
+                    <td> true </td>
+                    <td> false </td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td> false </td>
+                    <td> true </td>
+                    <td> false </td>
+                </tr>
+                <tr>
+                    <td> true </td>
+                    <td> true </td>
+                    <td> true </td>
+                </tr>
+            </tbody>
+        </table>
+        <b>Como se percebe, P implica em Q, e Q implica em P, formando a bi-implicação</b>
+
+        <br><br>
+        <br><br>
+        <b>(P ^ Q) v (¬P ^ ¬Q)</b>
+        <br><br>
+
+        <table class="table table-bordered" border="1px">
+            <thead class="thead-dark">
+                <tr>
+                    <th> (P ^ Q)
+                    </th>
+                    <th> (¬P ^ ¬Q) </th>
+                    <th> H </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> false </td>
+                    <td> true </td>
+                    <td> true </td>
+                </tr>
+                <tr>
+                    <td> false </td>
+                    <td> false </td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td> false </td>
+                    <td> false </td>
+                    <td> false </td>
+                </tr>
+                <tr>
+                    <td> true </td>
+                    <td> false </td>
+                    <td> true </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br> Nos exemplos acima podemos ver que os resultados obtidos em <b>"H"</b>, são idênticos ao resultado da
+        fórmula
+        <b>(P ↔ Q)</b> sendo falso na segunda e terceira interpretação e verdadeiro na primeira e quarta.
+
+
+
+        <br><br><br>Referências: <br>
+        <p>{ 1 }</p>
+        <a href="https://pt.wikipedia.org/wiki/Lógica_proposicional" target="_blank">
+            <button type="button" class="btn btn-outline-primary">https://pt.wikipedia.org/wiki/Lógica_proposicional
+            </button>
+        </a>
+        <p></p>
+
+    </div>
+</body>
+<script type="text/javascript" src="Porta-BI-Implica.js"></script>
+
+</html>

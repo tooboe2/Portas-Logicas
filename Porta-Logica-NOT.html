@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="Imagens/notebook.png" />
+    <title>Conectivo Lógico NOT</title>
+    <style>
+        table {
+            text-align: center;
+        }
+    </style>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbarr">
+            <h1 type="text" id="titlee">Conectivo Lógico NOT "(¬)"</h1>
+            <a id="home-Logo" href="index.html">
+                <button id="pinga" class="btnn fourth">HOME</button>
+                <br>
+            </a>
+        </nav>
+    </header>
+
+    <br>
+    <div class="dropdown">
+        <button class="dropbtn">Atalhos ☵</button>
+        <div class="dropdown-content">
+            <a href="Porta-Logica-E.html" class="btn">Porta AND</a>
+            <a href="Porta-Logica-OU.html" class="btn">Porta OU</a>
+            <a href="Porta-Logica-IMPLICA.html" class="btn">Porta IMPLICA</a>
+            <a href="Porta-Logica-BI-IMPLICA.html" class="btn">Porta BI-IMPLICA</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <br>
+
+        <h3>Definição</h3>
+
+        <br>
+
+        Uma conjunção é representada pelo conectivo lógico "Not"(¬),
+        A função NOT é aquela que inverte ou complementa o estado da variável de entrada, ou seja, se a variável for
+        False (Q), a saída vai ficar True (P), e se for True (P) a saída vai ficar False (Q). É, portanto, uma porta com
+        apenas um sinal de entrada e um sinal de saída, o qual assumirá sempre valores lógicos inversos.<a
+            href="http://proedu.rnp.br/bitstream/handle/123456789/437/Tecnicas_Digitais_COR_capa_20091124.pdf?sequence=1&isAllowed=y"
+            target="_blank">{
+            1 }</a>
+        <br><br>
+        <h3>Exemplos em linguagem natural:</h3>
+        <br>
+
+        Fórmula (H) = (¬P ^ ¬Q) <br><br>
+        P = João gosta de futebol. <br>
+        Q = Marcelo gosta de vôlei. <br>
+        H = <b>(¬)</B>João gosta de futebol <b>(E)</b> <b>(¬)</b>Marcelo gosta de vôlei.
+
+        <br><br>
+
+        <h3>Tabela Verdade </h3>
+
+        <br>
+        <div class="container">
+            <br><br>
+            <table id="tabelaverdade" class="table table-bordered">
+
+                <thead id="cabeçalhotabela" class="thead-dark">
+                    <tr>
+                        <th>P</th>
+                        <th>¬P</th>
+                    </tr>
+                </thead>
+
+                <tbody id="corpotabelalinha1">
+                    <td id="linha1P">true</td>
+                    <td id="resultadolinha1">false</td>
+                </tbody>
+
+                <tbody id="corpotabelalinha2">
+                    <td id="linha2P">false</td>
+                    <td id="resultadolinha2">true</td>
+                </tbody>
+
+            </table>
+        </div>
+        </tbody>
+        </table>
+
+        <br><br>
+
+        <h3>Equivalência Semântica</h3>
+
+        <br>
+        Podemos dizer que duas fórmulas são equivalentes semanticamente, se o resultado de ambas as tabelas-verdade
+        forem
+        iguais. A seguir temos alguns exemplos de algumas fórmulas que equivalem semanticamente à conjunção entre "P" e
+        "Q"
+        (¬P ^ ¬Q).
+        <br><br>
+
+        <h3>Exemplo</h3>
+
+        <br>
+        <b>¬(P ^ Q):</b>
+        <br><br>
+
+        <table class="table table-bordered" border="1px">
+            <thead class="thead-dark">
+                <tr>
+                    <th> ¬(P ^ Q) </th>
+                    <th> P </th>
+                    <th> Q </th>
+                    <th> H </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> true </td>
+                    <td> true </td>
+                    <td> true </td>
+                    <td> true </td>
+                </tr>
+                <tr>
+                    <td> true </td>
+                    <td> true </td>
+                    <td>false</td>
+                    <td> true </td>
+                </tr>
+                <tr>
+                    <td> true </td>
+                    <td> false </td>
+                    <td> True </td>
+                    <td> true </td>
+                </tr>
+                <tr>
+                    <td> false </td>
+                    <td> false </td>
+                    <td> false </td>
+                    <td> false </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        Nos exemplos acima podemos ver que os resultados obtidos em <b>"H"</b>, são idênticos ao resultado da fórmula
+        <b>¬(P ^ Q)</b>
+        sendo verdadeiro nas primeira, segunda e terceira interpretações e falso apenas na quarta.
+
+        <br><br><br>
+
+        Referências: <br>
+        <p>{ 1 }</p>
+        <a href="http://proedu.rnp.br/bitstream/handle/123456789/437/Tecnicas_Digitais_COR_capa_20091124.pdf?sequence=1&isAllowed=y"
+            target="_blank">
+            <button type="button"
+                class="btn btn-outline-primary">http://proedu.rnp.br/bitstream/handle/123456789/437/Tecnicas_Digitais_COR_capa_20091124.pdf?sequence=1&isAllowed=y
+            </button>
+        </a>
+        <p></p>
+
+    </div>
+
+</html>
